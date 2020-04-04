@@ -753,6 +753,71 @@ a:focus {
   text-decoration: none;
 }
 
+h5 {
+  margin: 0;
+}
+
+.nett-income {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.tax-label {
+  font-size: 15px;
+}
+
+.tax-amount {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-payslip {
+  margin-right: 10px;
+}
+
+.payslip-title {
+  font-size: 18px;
+  color: #afb0b0;
+}
+
+.standard-colored {
+  color: #7d7d7d;
+}
+
+.earning-colored {
+  color: #4c8699;
+  border-bottom: 3px solid #CCDADF;
+  border-top: 0;
+}
+
+.deduction-colored {
+  color: #ee870e;
+  border-bottom: 3px solid #F6DFC4;
+  border-top: 0;
+}
+
+.employer-colored {
+  color: #ee870e;
+}
+
+.income-colored {
+  background-color: #e3f6e2;
+  border: 2px solid #7cd677;
+  color: #2f8d2a;
+}
+
+table-bottomborder tbody+tbody,
+.table-bottomborder td,
+.table-bottomborder th {
+  border-bottom: 1px solid #ddd;
+  border-top: 0;
+}
+
+/*.table-bottomborder thead th {
+  border-bottom: 3px solid #ddd;
+  border-top: 0;
+}*/
+
 .container {
   width: auto;
 }

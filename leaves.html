@@ -8,33 +8,31 @@ permalink: /leaves
 
     <div class="col-md-12">
         <div class="card-box">
-            <!-- <h4 class="header-title m-t-0 m-b-30">My Recent Action Log</h4> -->
-
             <ul class="nav nav-pills navtab-bg nav-justified">
                 <li class="nav-item">
-                    <a href="#applyleave1" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                    <a href="#applyleave" data-toggle="tab" aria-expanded="true" class="nav-link active">
                         Apply for leave
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#viewapplication1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                    <a href="#viewapplication" data-toggle="tab" aria-expanded="false" class="nav-link">
                         View application
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#replacementcredit1" data-toggle="tab" aria-expanded="false" class="nav-link">
+                    <a href="#replacementcredit" data-toggle="tab" aria-expanded="false" class="nav-link">
                         Replacement credit
                     </a>
                 </li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane show active" id="applyleave1">
+                <div class="tab-pane show active" id="applyleave">
                     {% include leaves-apply-leave.html %}
                 </div>
-                <div class="tab-pane" id="viewapplication1">
+                <div class="tab-pane" id="viewapplication">
                     {% include leaves-view-application.html %}
                 </div>
-                <div class="tab-pane" id="replacementcredit1">
+                <div class="tab-pane" id="replacementcredit">
                     {% include leaves-replacement-credit.html %}
                 </div>
             </div>

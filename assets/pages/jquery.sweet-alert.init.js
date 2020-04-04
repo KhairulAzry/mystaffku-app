@@ -45,7 +45,19 @@
             swal(
                 {
                     title: 'Success!',
-                    text: 'You leave application has been submitted!',
+                    text: 'Your leave application has been submitted!',
+                    type: 'success',
+                    confirmButtonColor: '#5d6dc3'
+                }
+            )
+        });
+
+        //Success Submit Replacement Credit Message
+        $('#submit-replacement-credit').click(function () {
+            swal(
+                {
+                    title: 'Success!',
+                    text: 'Your replacement credit application has been submitted!',
                     type: 'success',
                     confirmButtonColor: '#5d6dc3'
                 }
