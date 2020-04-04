@@ -138,24 +138,24 @@
         var today = new Date($.now());
 
         var defaultEvents =  [{
-                title: 'Hey!',
+                title: 'Public Holiday',
                 start: new Date($.now() + 158000000),
                 className: 'bg-purple'
             },
             {
-                title: 'See John Deo',
+                title: 'Annual Leave',
                 start: today,
                 end: today,
                 className: 'bg-success'
             },
             {
-                title: 'Meet John Deo',
-                start: new Date($.now() + 168000000),
-                className: 'bg-info'
+                title: 'Annual Leave',
+                start: new Date($.now() + 338000000),
+                className: 'bg-success'
             },
             {
-                title: 'Buy a Theme',
-                start: new Date($.now() + 338000000),
+                title: 'Replacement Leave',
+                start: new Date($.now() + 998000000),
                 className: 'bg-primary'
             }];
 

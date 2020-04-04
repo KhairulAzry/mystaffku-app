@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card-box">
+            <h4 class="header-title m-t-0">Apply for leave</h4>
+            <p class="text-muted font-14 m-b-25">
+                Plan ahead and make sure your leave doesn't clash with any company or department's events by checking your calendar(s).
+            </p>
+
+            <form>
+                <div class="form-group m-b-20">
+                    <label>Leave Type</label>
+                    <select class="selectpicker" multiple data-selected-text-format="count" data-style="btn-light">
+                        <option>Annual</option>
+                        <option>Hospitalization</option>
+                        <option>Paternity</option>
+                        <option>Replacement</option>
+                        <option>Sick</option>
+                    </select>
+                </div>
+                <div class="form-group m-b-20">
+                    <label>Start & End Date</label>
+                    <div>
+                        <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="04/22/2020 - 04/29/2020"/>
+                    </div>
+                </div>
+                <div class="form-group m-b-20">
+                    <label>Reason</label>
+                    <textarea id="textarea" class="form-control" maxlength="300" rows="3" placeholder="Max 300 characters."></textarea>
+                </div>
+                <div class="form-group m-b-25">
+                    <label>Attachment</label>
+                    <div>
+                        <input type="file" class="filestyle" placeholder="Max file size: 2MB" data-btnClass="btn-gradient">
+                    </div>
+                </div>
+                <div class="form-group m-b-0">
+                    <button type="button" class="btn btn-block btn-gradient waves-effect waves-light" id="apply-leave">Apply for leave</button>
+                    <!-- Edit this Sweet Alert at assets/pages/jquery.sweet-alert.init.js line 43-->
+                </div>
+
+            </form>
+        </div> <!-- end card-box -->
+    </div>
+    <div class="col-md-6">
+        <div id="calendar" class="card-box">
+            <!-- Edit this calendar prototype at assets/pages/jquery.calendar.js line130 -->
+        </div>
+    </div> <!-- end col -->
+</div>  <!-- end row -->

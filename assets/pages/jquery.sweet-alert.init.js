@@ -40,6 +40,18 @@
             )
         });
 
+        //Success Apply Leave Message
+        $('#apply-leave').click(function () {
+            swal(
+                {
+                    title: 'Success!',
+                    text: 'You leave application has been submitted!',
+                    type: 'success',
+                    confirmButtonColor: '#5d6dc3'
+                }
+            )
+        });
+
         //Warning Message
         $('#sa-warning').click(function () {
             swal({
