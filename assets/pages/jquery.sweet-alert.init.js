@@ -64,6 +64,18 @@
             )
         });
 
+        //Success Submit Claim Message
+        $('#submit-claim').click(function () {
+            swal(
+                {
+                    title: 'Success!',
+                    text: 'Your claim has been submitted!',
+                    type: 'success',
+                    confirmButtonColor: '#5d6dc3'
+                }
+            )
+        });
+
         //Warning Message
         $('#sa-warning').click(function () {
             swal({

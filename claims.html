@@ -1,0 +1,159 @@
+---
+layout: default
+title: Claims
+permalink: /claims
+---
+
+<div class="row">
+	
+    <div class="col-md-12">
+        <div class="card-box">
+            <h4 class="header-title">My Claims</h4>
+
+            <div class="row">
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">Pending</h6>
+                        <h4>RM <span data-plugin="counterup">120.00</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">Approved & Paid</h6>
+                        <h4>RM <span data-plugin="counterup">650.00</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">Rejected</h6>
+                        <h4>RM <span data-plugin="counterup">0.00</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">Total excl SST</h6>
+                        <h4>RM <span data-plugin="counterup">723.80</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">SST</h6>
+                        <h4>RM <span data-plugin="counterup">46.20</span></h4>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                    <div class="card-box tilebox-one">
+                        <h6 class="text-muted text-uppercase mb-3">Grand Total</h6>
+                        <h4>RM <span data-plugin="counterup">770.00</span></h4>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div>
+    </div>
+
+</div> <!-- end claim summary -->
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card-box">
+            <h4 class="header-title m-t-0">Apply for Claim</h4>
+            <p class="text-muted font-14 m-b-25">
+                You may apply for claim based on what your company allow to claim. The claim will only be processed if your manager approves it.
+            </p>
+
+            <form>
+                <div class="form-group m-b-20">
+                    <label>Claim Type</label>
+                    <select class="selectpicker" multiple data-selected-text-format="count" data-style="btn-light">
+                        <option>Marketing / Sales</option>
+                        <option>Meal</option>
+                        <option>Transportation</option>
+                        <option>Milage</option>
+                        <option>Toll</option>
+                        <option>Accomodation</option>
+                        <option>Travel</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="form-group m-b-20">
+                    <label>Date</label>
+                    <div>
+                        <input class="form-control" type="date" name="date"/>
+                    </div>
+                </div>
+                <div class="form-group m-b-20">
+                    <label>Amount</label>
+                    <div>
+                        <input class="form-control" type="number" name="number"/>
+                    </div>
+                </div>
+                <div class="form-group m-b-20">
+                    <label>Purpose</label>
+                    <textarea id="textarea" class="form-control" maxlength="300" rows="3" placeholder="Max 300 characters."></textarea>
+                </div>
+                <div class="form-group m-b-25">
+                    <label>Attachment</label>
+                    <div>
+                        <input type="file" class="filestyle" placeholder="Max file size: 2MB" data-btnClass="btn-gradient">
+                    </div>
+                </div>
+                <div class="form-group m-b-0">
+                    <button type="button" class="btn btn-block btn-gradient waves-effect waves-light" id="submit-claim">Apply claim</button>
+                    <!-- Edit this Sweet Alert at assets/pages/jquery.sweet-alert.init.js line 43-->
+                </div>
+
+            </form>
+        </div> <!-- end card-box -->
+    </div>
+
+    <div class="col-md-8">
+        <div class="card-box">
+            <h4 class="header-title m-t-0">Claim List</h4>
+
+            <div class="table-rep-plugin">
+                <div class="table-responsive" data-pattern="priority-columns">
+                    <table id="tech-companies-1" class="table  table-striped">
+                        <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th data-priority="1">Type</th>
+                            <th data-priority="3">Purpose</th>
+                            <th data-priority="1">Status</th>
+                            <th data-priority="3">Action</th>
+                            <th data-priority="3">Option</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Thu, 2 Apr 2020; 09:10:52 AM</th>
+                            <td>Milage Claim</td>
+                            <td>Client Office - Kofix</td>
+                            <td class="text-warning">Pending</td>
+                            <td>Torai</td>
+                            <td><i class="fa fa-external-link text-info"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Fri, 20 Mar 2020; 03:43:18 AM</th>
+                            <td>Transport Claim</td>
+                            <td>Outstation - Penang</td>
+                            <td class="text-success">Approved</td>
+                            <td>Flux (HR)</td>
+                            <td><i class="fa fa-external-link text-info"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Fri, 20 Mar 2020; 03:34:45 AM</th>
+                            <td>Accomodation Claim</td>
+                            <td>Outstation - Penang</td>
+                            <td class="text-success">Approved</td>
+                            <td>Flux (HR)</td>
+                            <td><i class="fa fa-external-link text-info"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div> <!-- end claim list -->
